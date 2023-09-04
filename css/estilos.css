@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+body{
+	background: black;
+	height: 650px;
+	display: flex;
+    justify-content: flex-end;
+}
+h1{
+	text-align: center;
+	color: #04d11c;
+}
+form{
+	margin: auto;
+	width: 50%;
+	max-width: 400px;
+	background: white;
+	padding: 30px;
+	border-radius: 20px;
+	right: 30px;
+	top: 30px;
+	position: relative;
+
+}.form{
+	width: 80%;
+	margin: auto;
+	right: 20px;
+
+}
+.datos{
+	position: relative;
+	margin: 45px;
+}
+
+img{
+	width: 300; 
+	height: 250;
+	position: relative;
+	left: 0px;
+	top:20px;
+
+}
+input{
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 94%;
+	border: none;
+	border-bottom: 2px solid #9e8e8e;
+}
+input:focus{
+	outline: none;
+}
+label{
+	font-size: 16px;
+	position: absolute;
+	color: #544f4f;
+	left: 5px;
+	top: 10px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+
+}
+input:focus~label,input:valid~label{
+	top: -17px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0600bf;
+	text-align: left;
+}
+.barra{
+	position: relative;
+	display: block;
+	width: 100%;
+	min-width: 160px;
+}
+.barra::before{
+	content: "";
+	height: 2px;
+	width: 0%;
+	bottom: 0;
+	position: absolute;
+	background: #d21e1e;
+	transition: 0.3s;
+	left: 0;
+}
+input:focus~.barra::before{
+	width: 100%;
+}
+button{
+	border: none;
+	background: #0430d1;
+	display: block;
+	width: 50%;
+	margin: auto; 
+	height: 40px;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
